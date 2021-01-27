@@ -1,0 +1,76 @@
+{
+  "Customers": [
+    {
+      "CustomerCode": "1234",
+      "CustomerName": "andkonst",
+      "CustomerAmount": "1",
+      "id": 1
+    },
+    {
+      "CustomerCode": "5678",
+      "CustomerName": "faih",
+      "CustomerAmount": "03",
+      "id": 2
+    },
+    {
+      "CustomerCode": "3573",
+      "CustomerName": "giorgos",
+      "CustomerAmount": "45",
+      "id": 3
+    },
+    {
+      "CustomerCode": "1111",
+      "CustomerName": "giorgos",
+      "CustomerAmount": "034",
+      "id": 4
+    },
+    {
+      "CustomerCode": "1111",
+      "CustomerName": "giorgos",
+      "CustomerAmount": "034",
+      "id": 5
+    },
+    {
+      "CustomerCode": "1111",
+      "CustomerName": "wwww",
+      "CustomerAmount": 0,
+      "id": 6
+    },
+    {
+      "CustomerCode": "1111",
+      "CustomerName": "wwww",
+      "CustomerAmount": 0,
+      "id": 7
+    },
+    {
+      "CustomerCode": "1111",
+      "CustomerName": "wwww",
+      "CustomerAmount": 0,
+      "id": 8
+    },
+    {
+      "CustomerCode": "5678",
+      "CustomerName": "ghjk",
+      "CustomerAmount": 0,
+      "id": 9
+    },
+    {
+      "CustomerCode": "1325",
+      "CustomerName": "michalis",
+      "CustomerAmount": "135",
+      "id": 10
+    },
+    {
+      "CustomerCode": "4695",
+      "CustomerName": "madews",
+      "CustomerAmount": "3",
+      "id": 11
+    },
+    {
+      "CustomerCode": "1908",
+      "CustomerName": "panathinaikos",
+      "CustomerAmount": "13",
+      "id": 12
+    }
+  ]
+}

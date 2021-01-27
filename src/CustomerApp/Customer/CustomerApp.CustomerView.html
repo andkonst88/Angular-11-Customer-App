@@ -1,0 +1,38 @@
+<div class="container w-100">
+  <form [formGroup]="CustomerModel.formCustomerGroup">
+    <div class="form-group row">
+      <label for="txtcode" class="col-sm-2 col-form-label ">Customer Code :</label>
+      <div class="col-sm-10"><input type="text" class="form-control" id="txtcode" formControlName="CustomerCodeControl"
+          [(ngModel)]="CustomerModel.CustomerCode">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="txtname" class="col-sm-2 col-form-label">Customer Name :</label>
+      <div class="col-sm-10"><input type="text" class="form-control" id="txtname" formControlName="CustomerNameControl"
+          [(ngModel)]="CustomerModel.CustomerName">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="txtamount" class="col-sm-2 col-form-label"> Customer Amount :</label>
+      <div class="col-sm-10"><input type="text" class="form-control" #txtAmount id="txtamount"
+          [(ngModel)]="CustomerModel.CustomerAmount" [ngModelOptions]="{standalone: true}">
+      </div>
+    </div>
+
+
+    <button id="btnsubmit" [disabled]="!(CustomerModel.formCustomerGroup.valid)" type="button" class="btn btn-light"
+      value="send to server" (click)="PosttoServer()">Save New Customer </button>
+
+  </form>
+  <div class="alert alert-dark" role="alert" *ngIf="CustomerModel.formCustomerGroup.dirty"
+    [hidden]="!(hasError('pattern','CustomerCodeControl'))">Customer code
+    format is not proper</div>
+  <div class="alert alert-dark" role="alert" *ngIf="CustomerModel.formCustomerGroup.dirty"
+    [hidden]="!(hasError('required','CustomerCodeControl'))">Customer
+    code is required</div>
+  <div class="alert alert-dark" role="alert" *ngIf="CustomerModel.formCustomerGroup.dirty"
+    [hidden]="!(hasError('required','CustomerNameControl'))">Customer
+    name is required</div>
+  <grid-ui [grid-columns]="[{'colName':'CustomerCode'},{'colName':'CustomerName'},{'colName':'CustomerAmount'}]"
+    [grid-data]="CustomerModels" (grid-selected)="SelectCustomer($event)"></grid-ui>
+</div>
